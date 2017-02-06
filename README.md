@@ -1,13 +1,15 @@
-# NG Bootstrap - [Angular 2](http://angular.io/) directives specific to [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
+# NG Bootstrap Fork - [Angular 2](http://angular.io/) directives specific to [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
 
 [![npm version](https://badge.fury.io/js/%40ng-bootstrap%2Fng-bootstrap.svg)](https://badge.fury.io/js/%40ng-bootstrap%2Fng-bootstrap)
 [![Build Status](https://travis-ci.org/ng-bootstrap/ng-bootstrap.svg?branch=master)](https://travis-ci.org/ng-bootstrap/ng-bootstrap)
 [![devDependency Status](https://david-dm.org/ng-bootstrap/ng-bootstrap/dev-status.svg?branch=master)](https://david-dm.org/ng-bootstrap/ng-bootstrap#info=devDependencies)
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/pkozlowski.svg)](https://saucelabs.com/u/pkozlowski)
 
-Welcome to the Angular 2 version of the [Angular UI Bootstrap](https://github.com/angular-ui/bootstrap) library.
-This library is being built from scratch by the [ui-bootstrap team](https://github.com/angular-ui/bootstrap).
+Welcome to the Angular 2 version of the [Angular UI Bootstrap](https://github.com/angular-ui/bootstrap) fork library.
+This library is being built from scratch by the [ui-bootstrap team](https://github.com/angular-ui/bootstrap), but I did a fork with features in alternative version.
 We are using TypeScript and targeting the Bootstrap 4 CSS framework.
+
+It uses ng-bootstrap alpha 17 with Bootstrap 4.alpha4 since here we´ll do update with new features and bug fixes.
 
 As with Bootstrap 4 and Angular 2, this library is a work in progress. Please check out our list of
 [issues](https://github.com/ng-bootstrap/ng-bootstrap/issues) to see all the things we are implementing.
@@ -18,22 +20,22 @@ Feel free to make comments there.
 View all the directives in action at https://ng-bootstrap.github.io
 
 ## Dependencies
-* [Angular 2](https://angular.io) (tested with 2.0.0)
-* [Bootstrap 4](https://v4-alpha.getbootstrap.com) (tested with 4.0.0-alpha.5)
+* [Angular 2](https://angular.io) (tested with 2.3.1)
+* [Bootstrap 4](https://v4-alpha.getbootstrap.com) (tested with 4.0.0-alpha.4)
 
 ## Installation
 After installing the above dependencies, install `ng-bootstrap` via:
 ```shell
-npm install --save @ng-bootstrap/ng-bootstrap
+npm install --save @stephanoapiolaza/ng-alternative
 ```
 Once installed you need to import our main module:
 ```js
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from '@stephanoapiolaza/ng-alternative';
 ```
 The only remaining part is to list the imported module in your application module. The exact method will be slightly
 different for the root (top-level) module for which you should end up with the code similar to (notice `NgbModule.forRoot()`):
 ```js
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from '@stephanoapiolaza/ng-alternative';
 
 @NgModule({
   declarations: [AppComponent, ...],
@@ -47,7 +49,7 @@ export class AppModule {
 Other modules in your application can simply import `NgbModule`:
 
 ```js
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from '@stephanoapiolaza/alternative';
 
 @NgModule({
   declarations: [OtherComponent, ...],
@@ -63,7 +65,7 @@ If you are using SystemJS, you should also adjust your configuration to point to
 In your systemjs config file, `map` needs to tell the System loader where to look for `ng-bootstrap`:
 ```js
 map: {
-  '@ng-bootstrap/ng-bootstrap': 'node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
+  '@stephanoapiolaza/ng-alternative': 'node_modules/@stephanoapiolaza/ng-alternative/bundles/ng-bootstrap.js',
 }
 ```
 ## Supported browsers
