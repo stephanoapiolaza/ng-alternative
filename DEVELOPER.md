@@ -1,4 +1,4 @@
-# Building and Testing ng-bootstrap
+#Building and Testing ng - bootstrap
 
 This document describes how to set up your development environment to build and test ng-bootstrap.
 It also explains the basic mechanics of using `git`, `node`, and `npm`.
@@ -40,13 +40,14 @@ Fork and clone the ng-bootstrap repository:
    the ng-bootstrap's ng-bootstrap repository that you forked in the first place.
 
 ```shell
-# Clone your GitHub repository:
+#Clone your GitHub repository:
 git clone git@github.com:<github username>/ng-bootstrap.git ng-bootstrap
 
-# Go to the ng-bootstrap directory:
+#Go to the ng - bootstrap directory:
 cd ng-bootstrap
 
-# Add the main ng-bootstrap repository as an upstream remote to your repository:
+#Add the main ng -                                                             \
+    bootstrap repository as an upstream remote to your repository:
 git remote add upstream https://github.com/ng-bootstrap/ng-bootstrap.git
 ```
 
@@ -55,7 +56,7 @@ git remote add upstream https://github.com/ng-bootstrap/ng-bootstrap.git
 Next, install the JavaScript modules needed to build and test ng-bootstrap:
 
 ```shell
-# Install ng-bootstrap project dependencies (package.json)
+#Install ng - bootstrap project dependencies(package.json)
 npm install
 ```
 
