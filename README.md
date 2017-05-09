@@ -1,4 +1,4 @@
-# NG Bootstrap Fork - [Angular 2](http://angular.io/) directives specific to [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
+# NG Alternative (Fork NgBootstrap) - [Angular 2](http://angular.io/) directives specific to [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
 
 [![npm version](https://badge.fury.io/js/%40ng-bootstrap%2Fng-bootstrap.svg)](https://badge.fury.io/js/%40ng-bootstrap%2Fng-bootstrap)
 [![Build Status](https://travis-ci.org/ng-bootstrap/ng-bootstrap.svg?branch=master)](https://travis-ci.org/ng-bootstrap/ng-bootstrap)
