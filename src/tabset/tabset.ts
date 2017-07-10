@@ -80,7 +80,7 @@ export interface NgbTabChangeEvent {
   exportAs: 'ngbTabset',
   template: `
     <ul [class]="'nav nav-' + type" role="tablist">
-      <li class="nav-item" *ngFor="let tab of tabs">
+      <li class="nav-item {{ addClass }}" *ngFor="let tab of tabs">
         <a [id]="tab.id" class="nav-link" [class.active]="tab.id === activeId" [class.disabled]="tab.disabled"
           href (click)="!!select(tab.id)" role="tab" [attr.aria-controls]="tab.id + '-panel'" [attr.aria-expanded]="tab.id === activeId">
           {{tab.title}}<template [ngTemplateOutlet]="tab.titleTpl?.templateRef"></template>
@@ -110,11 +110,19 @@ export class NgbTabset implements AfterContentChecked {
   @Input() type: 'tabs' | 'pills';
 
   /**
+   * Add custom classes.
+   */
+  @Input() addClass: string;
+
+  /**
    * A tab change event fired right before the tab selection happens. See NgbTabChangeEvent for payload details
    */
   @Output() tabChange = new EventEmitter<NgbTabChangeEvent>();
 
-  constructor(config: NgbTabsetConfig) { this.type = config.type; }
+  constructor(config: NgbTabsetConfig) {
+    this.type = config.type;
+    this.addClass = config.addClass;
+  }
 
   /**
    * Selects the tab with the given id and shows its associated pane.
