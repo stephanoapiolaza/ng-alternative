@@ -9,7 +9,7 @@ Welcome to the Angular 2 version of the [Angular UI Bootstrap](https://github.co
 This library is being built from scratch by the [ui-bootstrap team](https://github.com/angular-ui/bootstrap), but I did a fork with features in alternative version.
 We are using TypeScript and targeting the Bootstrap 4 CSS framework.
 
-It uses ng-bootstrap alpha 17 with Bootstrap 4.alpha4 since here we´ll do update with new features and bug fixes.
+It uses ng-bootstrap alpha 17 with Bootstrap 4.alpha5 since here we´ll do update with new features and bug fixes.
 
 As with Bootstrap 4 and Angular 2, this library is a work in progress. Please check out our list of
 [issues](https://github.com/ng-bootstrap/ng-bootstrap/issues) to see all the things we are implementing.
@@ -21,7 +21,7 @@ View all the directives in action at https://ng-bootstrap.github.io
 
 ## Dependencies
 * [Angular 2](https://angular.io) (tested with 2.3.1)
-* [Bootstrap 4](https://v4-alpha.getbootstrap.com) (tested with 4.0.0-alpha.4)
+* [Bootstrap 4](https://v4-alpha.getbootstrap.com) (tested with 4.0.0-alpha.5)
 
 ## Installation
 After installing the above dependencies, install `ng-bootstrap` via:
